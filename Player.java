@@ -1,7 +1,9 @@
-public class Player{
-	int number=0;
-	public void guess(){
-		number=(int)(Math.random()*10);
-		System.out.println("I'm guessing "+number);
+class Player{
+	static int playCount=0;
+	private String name;
+	public Player(String n){
+		name =n;
+		playCount++;
 	}
 }
+
